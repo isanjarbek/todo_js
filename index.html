@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js"
+      integrity="sha512-M9w45qyI/KVHcxTODUsdwWip284UJBj2e6st1Ub6tXXO4nJAP3aIVN2Wkgd15CmJL6eJRFBSUssVyKtZX1v1Fg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="MAIN_APP">
+      <h1 class="text__center">Todo App</h1>
+      <main>
+        <section class="todo__add__form">
+          <form>
+            <input type="text" class="todo__input" />
+            <button type="submit" class="button__add__todo">Add todo</button>
+          </form>
+        </section>
+        <section class="todos__wrapper">
+          <!-- <div class="one__todo__wrapper">
+            <div class="one__todo__content">
+              <h3>1. Kitob o'qish</h3>
+            </div>
+            <div class="one__todo__actions">
+              <button class="button__edit">Edit</button>
+              <button class="button__delete">Delete</button>
+            </div>
+          </div> -->
+        </section>
+      </main>
+    </div>
+    <div class="edit__modal" style="display: none">
+      <div class="modal__content">
+        <div class="modal__close">
+          <i class="fa fa-times"></i>
+        </div>
+        <section class="edit__todo__form">
+          <form>
+            <input type="text" class="edit__todo__input" />
+            <button type="submit" class="button__edit__todo">Save</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
